@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.header {
+    height: 70px;
+    box-shadow: 5px black;
+    box-shadow: 0px 1px 1px 1px #bbbbbb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+div.content {
+    padding: 40px 100px;
+    color: #313131;
+    display: grid;
+    grid-template-columns: auto 3fr;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 8px;
+}
+
+div.content div.lateral-menu div.box {
+    margin-top: 45px;
+}
+
+
+/* div.content div.lateral-menu div.selects input:checked {
+    background: brown;
+} */
+
+div.content div.lateral-menu div.selects li {
+    display: flex;
+    align-items: center;
+}
+
+div.content div.lateral-menu div.selects li+li {
+    margin-top: 8px;
+}
+
+div.content div.lateral-menu div.selects input {
+    all:unset;
+    position:relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor:pointer;
+    border: 1px solid #a09f9f;
+}
+
+div.content div.lateral-menu div.selects li input{
+    margin-right: 10px;
+}
+
+
+div.content div.lateral-menu div.selects li input:checked::after {
+    content:"";
+    position: absolute;
+    width:10px;
+    height:10px;
+    left: 50%;
+    top: 50%;
+    background: #2bbff2;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  div.content div.lateral-menu div.selects li label{
+      font-size: 14px;
+  }
+
+  div.content div.lateral-menu div.sizes div.options {
+    width: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+  }
+
+  div.content div.lateral-menu div.sizes div.options button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #c0c0c0;
+    background: none;
+    color: #858585;
+}
+
+div.content div.lateral-menu div.sizes div.options button:focus {
+    outline: none;
+    border: 1px solid #2bbff2;
+
+}
+
+div.content div.vitrine {
+    padding: 0 0 0 80px;
+
+}
+
+div.content div.vitrine .itens-box {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    
+}
+
+div.content div.vitrine .itens {
+text-align: center;
+}
+
+div.content div.vitrine .itens h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+div.content div.vitrine .itens h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+div.content div.vitrine .itens p {
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+div.content div.vitrine .itens button {
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+div.content div.vitrine .orders {
+    position: absolute;
+    right: 100px;
+}
+
+.dropbtn {
+    color: #313131;
+    background-color: white;
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    border: 1px solid #313131;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    min-width: 140px;
+    border: 1px solid #313131;
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #2bbff2;
+    color: white;
+    outline: none;
+      
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+  }
+
+  .dropdown span {
+      transform: rotate(-90deg);
+  }
+
+  div.cart span.dois {
+    background-color: #2bbff2;
+    width: 22px;
+    height: 22px;
+    margin-left: -5px;
+    margin-top: 5px;
+    position: fixed;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
