@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 div.header {
@@ -12,11 +12,11 @@ div.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 120px;
 }
 
 div.content {
-    padding: 40px 100px;
+    padding: 40px 120px;
     color: #313131;
     display: grid;
     grid-template-columns: auto 3fr;
@@ -106,15 +106,16 @@ div.content div.lateral-menu div.sizes div.options button:focus {
 }
 
 div.content div.vitrine {
-    padding: 0 0 0 80px;
+    padding: 0 0 0 60px;
 
 }
 
 div.content div.vitrine .itens-box {
     margin-top: 90px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 200px 200px 200px;
     gap: 50px;
+    justify-content: space-around;
     
 }
 
@@ -222,9 +223,23 @@ div.content div.vitrine .orders {
     height: 22px;
     margin-left: -5px;
     margin-top: 5px;
-    position: fixed;
+    position: absolute;
     border-radius: 50%;
     color: white;
     text-align: center;
+}
+
+button.mais {
+    background-color:#2bbff2;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    align-items: center;
+    grid-column: 2;
 }
 
